@@ -1,25 +1,80 @@
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevTube - Premium Video Content for Developers</title>
-    <meta name="description" content="DevTube - Premium video content platform for developers and tech professionals" />
-    <meta name="author" content="DevTube" />
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTube - תכנים מקצועיים למפתחים</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <span class="logo-icon">▶</span>
+                    <span class="logo-text">DevTube</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="#" class="nav-link" data-category="enrichment">Enrichment</a>
+                    <a href="#" class="nav-link" data-category="tech-support">Tech Support</a>
+                    <a href="#" class="nav-link" data-category="be">BE</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <meta property="og:title" content="DevTube - Premium Video Content for Developers" />
-    <meta property="og:description" content="DevTube - Premium video content platform for developers and tech professionals" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Home Page -->
+            <div id="home-page" class="page active">
+                <div class="hero">
+                    <h1 class="hero-title">ברוכים הבאים ל-DevTube</h1>
+                    <p class="hero-subtitle">תכנים מקצועיים למפתחים ואנשי טכנולוגיה</p>
+                </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@devtube" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+                <div id="categories-content"></div>
+            </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+            <!-- Category Page -->
+            <div id="category-page" class="page">
+                <div class="category-header">
+                    <button id="back-btn" class="back-btn">← חזרה</button>
+                    <h1 id="category-title"></h1>
+                    <p id="category-description"></p>
+                </div>
+                <div id="category-videos" class="videos-grid"></div>
+            </div>
+
+            <!-- Video Page -->
+            <div id="video-page" class="page">
+                <div class="video-header">
+                    <button id="video-back-btn" class="back-btn">← חזרה לקטגוריה</button>
+                </div>
+                <div class="video-container">
+                    <div class="video-player-wrapper">
+                        <video id="video-player" class="video-player" controls poster="">
+                            <source src="" type="application/x-mpegURL">
+                            הדפדפן שלך לא תומך בהפעלת וידאו.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h1 id="video-title"></h1>
+                        <div id="video-external-link"></div>
+                        <div class="video-description">
+                            <h3>אודות הסרטון</h3>
+                            <p id="video-desc-content"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="script.js"></script>
+</body>
 </html>

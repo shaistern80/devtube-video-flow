@@ -1,0 +1,65 @@
+
+{
+  "enrichment": [
+    {
+      "id": "enr-001",
+      "title": "דפוסי React מתקדמים לאפליקציות ארגוניות",
+      "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=225&fit=crop",
+      "videoUrl": "https://example.com/video1.m3u8",
+      "externalLink": "https://github.com/example/react-patterns",
+      "category": "enrichment"
+    },
+    {
+      "id": "enr-002",
+      "title": "יסודות למידת מכונה למפתחים",
+      "thumbnail": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=225&fit=crop",
+      "videoUrl": "https://example.com/video2.m3u8",
+      "externalLink": "https://docs.ml-guide.com",
+      "category": "enrichment"
+    },
+    {
+      "id": "enr-003",
+      "title": "שיטות עבודה מומלצות לארכיטקטורת ענן",
+      "thumbnail": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=225&fit=crop",
+      "videoUrl": "https://example.com/video3.m3u8",
+      "externalLink": "",
+      "category": "enrichment"
+    }
+  ],
+  "tech-support": [
+    {
+      "id": "ts-001",
+      "title": "דיבוג בעיות בסביבת ייצור כמו מקצוען",
+      "thumbnail": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=225&fit=crop",
+      "videoUrl": "https://example.com/video4.m3u8",
+      "externalLink": "https://debug-toolkit.dev",
+      "category": "tech-support"
+    },
+    {
+      "id": "ts-002",
+      "title": "ניטור ביצועים ואופטימיזציה",
+      "thumbnail": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=225&fit=crop",
+      "videoUrl": "https://example.com/video5.m3u8",
+      "externalLink": "",
+      "category": "tech-support"
+    }
+  ],
+  "be": [
+    {
+      "id": "be-001",
+      "title": "צלילה עמוקה לארכיטקטורת מיקרו-שירותים",
+      "thumbnail": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=225&fit=crop",
+      "videoUrl": "https://example.com/video6.m3u8",
+      "externalLink": "https://microservices-guide.io",
+      "category": "be"
+    },
+    {
+      "id": "be-002",
+      "title": "אסטרטגיות להרחבת בסיסי נתונים",
+      "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=225&fit=crop",
+      "videoUrl": "https://example.com/video7.m3u8",
+      "externalLink": "",
+      "category": "be"
+    }
+  ]
+}
